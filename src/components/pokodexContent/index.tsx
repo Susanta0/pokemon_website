@@ -35,7 +35,6 @@ const PokedexGrid: React.FC = () => {
   // sort state
   const [sortValue, setSortValue] = useState<string>("");
   // Pagination states
-  const [currentPage, setCurrentPage] = useState<number>(1);
   const ITEMS_PER_PAGE = 12;
   const [offset, setOffset] = useState(0); // Tracks the current offset for API calls
 

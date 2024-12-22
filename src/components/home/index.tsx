@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
@@ -84,7 +85,7 @@ const Home: React.FC = () => {
       )}
       {isLoading ? (
         <div className="flex justify-center items-center h-40">
-          <img
+          <Image
             className="rounded-full object-cover animate-spin h-16 w-16"
             src="https://assets.pokemon.com/static2/_ui/img/chrome/loaders/pokeball_gray.png"
             alt="loading"
@@ -108,7 +109,7 @@ const Home: React.FC = () => {
                       key={card.id}
                       className="w-[18em] flex-shrink-0 flex flex-col items-center justify-center bg-[#616161] text-white rounded-lg"
                     >
-                      <img
+                      <Image
                         src={
                           card.sprites.other["official-artwork"].front_default
                         }

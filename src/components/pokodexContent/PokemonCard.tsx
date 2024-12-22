@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface PokemonCardProps {
@@ -22,7 +23,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({
     <>
       <div className="transform transition-transform duration-100 hover:-translate-y-1">
         <div className="bg-[#F2F2F2]">
-          <img
+          <Image
             src={sprites.other["official-artwork"].front_default}
             alt={name}
             className="h-[205.16px] w-[205.16px] m-auto"

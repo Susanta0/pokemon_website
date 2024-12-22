@@ -33,7 +33,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({
           <span className="font-medium text-gray-600">#{id}</span>
           <p className="font-semibold text-[24px]">{name.charAt(0).toUpperCase() + name.slice(1)}</p>
           <div className="flex items-center gap-x-1 mt-2">
-            {types.map((ele, ind) => (
+            {types.map((ele) => (
               <p 
               style={{
                 backgroundColor: 

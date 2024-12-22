@@ -103,7 +103,7 @@ const Home: React.FC = () => {
                   width: `${(pokemon.length / 3) * 100}%`,
                 }}
               >
-                {pokemon.map((card, index) => {
+                {pokemon.map((card) => {
                   return (
                     <div
                       key={card.id}
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
                         <div className="flex items-center gap-6">
                           <p>Type</p>
                           <div className="flex items-center gap-x-1 mt-2">
-                            {card.types.map((ele, ind) => (
+                            {card.types.map((ele) => (
                               <p
                                 style={{
                                   backgroundColor:
